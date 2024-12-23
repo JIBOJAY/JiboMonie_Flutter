@@ -1,0 +1,50 @@
+name: dev
+description: A new Flutter project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_nav_bar: ^5.0.7
+  line_icons: ^2.0.3
+  font_awesome_flutter: ^10.8.0
+  uni_links: ^0.5.1
+  shared_preferences: ^2.3.1
+  url_launcher: ^6.3.1
+  http: ^1.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.2
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/app_icon.png"
+  remove_alpha_ios: true
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/home.png
+    - assets/icons/wallet_card.png
+    - assets/icons/clock_rotate_left.png
+    - assets/icons/user.png
+    - assets/fonts/Poppins-Regular.ttf  # Added Poppins font asset explicitly
+    - assets/fonts/Poppins-Bold.ttf
+    - assets/fonts/Poppins-Italic.ttf  # Add more if needed
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-Italic.ttf
+          style: italic
